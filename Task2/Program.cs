@@ -5,3 +5,14 @@ a = 5; b = 7 -> max = 7
 a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
 */
+Console.WriteLine("Определим какое из двух чисел больше");
+Console.WriteLine("Введите первое число: ");
+string numbersA = Console.ReadLine();
+int a = Convert.ToInt32(numbersA);
+Console.WriteLine("Введите второе число: ");
+string numbersB = Console.ReadLine();
+int b = Convert.ToInt32(numbersB);
+
+int max = a;
+if(b > max) max = b;
+Console.WriteLine("max = " + max);
