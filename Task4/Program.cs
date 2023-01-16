@@ -17,6 +17,10 @@ string numbersC = Console.ReadLine();
 int c = Convert.ToInt32(numbersC);
 
 int max = a;
+if(a==b && a==c) Console.WriteLine("Все числа равны " + max);
+else
+{
 if(b > max) max = b;
 if(c > max) max = c;
 Console.WriteLine("max = " + max);
+}
